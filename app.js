@@ -4,9 +4,11 @@ import { signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 
 
  onAuthStateChanged(auth, (user) => {
-    if (!user) {
+    if (user) {
       const uid = user.uid;
       window.location.href = './index.html'
+    }else{
+      console.log("signout");
     }
   });
 

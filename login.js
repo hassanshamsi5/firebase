@@ -20,7 +20,7 @@ btn.addEventListener('click' ,()=> {
     const user = userCredential.user;
     console.log('user' , user);
     alert('logged in ');
-    location.replace('./quiz app/index.html');
+    location.replace('./Quiz-App/index.html');
   })
   .catch((error) => {
     const errorCode = error.code;
